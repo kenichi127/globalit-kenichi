@@ -1,0 +1,76 @@
+.a {
+    width: 960px;
+    height: 600px;
+    background-color: #F7F8F9;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+}
+.b {
+    width: 960px;
+    height: 300px;
+    background-color: black;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+}
+.c {
+    width: 960px;
+    height: 200px;
+    background-color: #ff9999;
+    font-family: Georgia, 'Times New Roman', Times, serif
+}
+#a1 {
+    color: red;
+    background-color: yellow;
+    font-family: "明朝"
+}
+.d {
+    width: 960px;
+    height: 60px;
+    background-color: yellow;
+}
+body {
+    font-family: "helvetica";
+}
+h1 {
+    font-family: "impact";
+    font-style: italic;
+    text-transform: uppercase;
+}
+p {
+    font-size: 30px;
+    text-align: center;
+}
+h3 {
+    font-size: 2em;
+    text-transform: lowercase;
+}
+h2 { 
+    font-weight: bold;
+    font-variant: small-caps;
+    text-decoration: underline;
+    text-align: left;
+    margin: 20px;
+    padding: 40px;
+    border-width: 4px;
+    border-style: dashed;
+    border-color: #123456
+}
+div {
+    margin: auto;
+}
+.a2 {
+    text-transform: initial;
+    border-style: dotted;
+    border-color: blue;
+}
+#a9 {
+    text-align: center
+}
+
+table, th, td{
+    border: 1px solid black;
+    border-collapse: collapse;
+    text-align: center;
+    border-length:100px;
+}
+#a6{
+    border-style: none
+}
