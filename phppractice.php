@@ -179,8 +179,167 @@ switch ($food) {
   	  echo "Is it food?";
         break;
     default:
-  	  echo "Your food is $food !";
+  	  echo "Your food is $food!";
 }
+echo "<br>";
+echo "<br>";
+$input3 = 2;
+echo "<br>";
+echo $input3;
+$input4 = -8;
+echo "<br>";
+echo $input4;
+$operater ="minus";
+echo "<br>";
+echo $operater;
+echo "<br>";
+if (is_numeric($input3)==true or is_numeric($input4)==true) {
+    switch ($operater) {
+    case "add":
+      $add = $input3 + $input4;
+      echo "Answer is $add.";
+    	    break;
+    case "minus":
+      $minus = $input3 - $input4;
+  	  echo "Answer is $minus.";
+        break;
+    case "multiphy":
+      $multiphy = $input3 * $input4;
+  	  echo "Answer is $multiphy";
+        break;
+    case "divide":
+      $divide = $input3 / $input4;
+  	  echo "Answer is $divide";
+        break;
+    default:
+  	  echo "Operater is error!";
+}}else{
+echo "Input is error!";
+}
+echo "<br>";
+$x = 1;
+while($x <= 7){
+    echo "The number is : $x <br>";
+    $x++;
+}
+echo "<br>";
+$_x = 1; 
+do {
+    echo "The number is : $x <br>";
+    $_x++;
+}while($_x <= 7);
+echo "<br>";
+echo "<br>";
+for ($__x = 0; $__x <= 7; $__x++) {
+    echo "The number is : $__x <br>";
+}
+$_colors = array("red" , "green" , "blue" , "yellow");
+foreach ($_colors as $_value){
+    echo "$_value <br>";
+} 
+
+
+for ($s = 1 ; $s <=10; $s++)
 ?>
+<?php
+$table = array(
+    array("Number","Description"),
+    array("1","This is Data1"),
+    array("2","This is Data2"),
+    array("3","This is Data3"),
+    array("4","This is Data4")
+);
+?>
+<table border=1>
+    <?php foreach($table as $row){ ?>
+    <tr>
+        <?php foreach($row as $cel){ ?>
+            <td><?= $cel?></td>
+        <?php } ?>
+    </tr>
+    <?php } ?>
 </body>
+</html>
+<html>
+<head>
+    <style>
+        table, td, th {
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+    </style>
+</head>
+<body>
+</table>
+<table border="single">
+    <tr>
+        <th>Number</th>
+        <th>Description</th>
+    </tr>
+    <?php
+        for ($rows = 1 ; $rows <= 4; $rows++){
+            echo "<tr>";
+            echo "<td>$rows</td>";
+            echo "<td>This is Data $rows</td>";
+            echo "<tr>";
+        }
+    ?>
+</table>
+<?php
+for($row = 1; $row <= 5; $row++){
+    for($kome = 1; $kome <= $row; $kome++){
+          echo "*";
+    }
+    echo "<br>";
+}
+function helloMsg() {
+    echo "Hello world!";
+}
+
+helloMsg();
+echo "<br>";
+function famname($firstname, $year) {
+    echo "$firstname Iwasaki. Born in $year.<br>";
+}
+
+famname("Kenichi","1998");
+famname("Toshinori","1961");
+famname("Yoshiko","1964");
+
+function sum($x,$y){
+    $z = $x + $y;
+    return $z;
+}
+echo "5 + 10= " , sum(5, 10) . "<br>";
+echo "7 + 13= " , sum(7, 13) . "<br>";
+echo "2 + 4= " , sum(2, 4);
+echo "<br>";
+$x5 = 10;
+function myCheck() {
+    global $x5;
+    echo "Variable x inside function is: $x5.<br>";
+}
+myCheck();
+
+echo "Variable x outside function is: $x5";
+?>
+<?php
+$cars = array("Toyota", "Nissan", "Honda");
+echo "I like " . $cars[0] . ", " . $cars[1] . " and " . $cars[2] . ".";
+echo count($cars);
+echo "<br>";
+
+$arrlength = count($cars);
+
+for($X=0; $X < $arrlength; $X++){
+    echo $cars[$X];
+    echo "<br>";
+}
+
+$_number = array("10", "17", "22", "2", "7", "1", "11");
+    sort($_number);
+    rsort($_number);
+?>
+
+</body>    
 </html>
